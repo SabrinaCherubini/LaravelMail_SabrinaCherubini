@@ -18,3 +18,6 @@ Route::get('/', [PublicController::class, 'home'])->name('Homepage');
 Route::get('products',[PublicController::class,'ShowProducts'])->name('Products');
 Route::get('products/details', [PublicController::class, 'ShowDetails'])->name('Details');
 Route::get('Contacts', [PublicController::class, 'ShowContacts'])->name('Contacts');
+
+// Rotta che permette di mandare mail
+Route::post('/send',[PublicController::class, 'SendMail'])->name('Send');

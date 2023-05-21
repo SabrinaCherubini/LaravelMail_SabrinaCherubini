@@ -75,3 +75,18 @@ h5 {
         color:aliceblue;
 
         }
+.form{
+    border-radius: 50px;
+    min-height: 50vh;
+    background-color: var(--b);
+}
+
+.mform{
+    margin-top: 200px;
+}
+
+.mcard{
+    margin-top: 150px;
+}
+
+
