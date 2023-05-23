@@ -79,6 +79,7 @@ h5 {
     border-radius: 50px;
     min-height: 50vh;
     background-color: var(--b);
+    padding:10px
 }
 
 .mform{

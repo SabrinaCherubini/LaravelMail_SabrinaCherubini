@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PublicController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,12 @@ Route::get('Contacts', [PublicController::class, 'ShowContacts'])->name('Contact
 
 // Rotta che permette di mandare mail
 Route::post('/send',[PublicController::class, 'SendMail'])->name('Send');
+
+//Rotta per creazione prodotto ( databese )
+Route::get('/product/create', [ProductController::class, 'Create_prod'])->name('Create_products');
+
+//Rotta per prendere dati dal form prodotti
+Route::post('/product/store',[ProductController::class, 'store'])->name('product_store');
+
+//Rotta per visualizzare tutti i prodotti salvati nel database
+Route::get('/product saved',[ProductController::class,'viewProducts'])->name('ViewsProducts');

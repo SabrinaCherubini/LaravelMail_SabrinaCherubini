@@ -9,6 +9,10 @@
           <a class="nav-link text-w" aria-current="page" href="{{Route('Homepage')}}">Home</a>
           <a class="nav-link text-w mx-4" href="{{Route('Products')}}">Products</a>
           <a class="nav-link text-w " href="{{Route('Contacts')}}">Contacts</a>
+          <a class="nav-link text-w ms-4 " href="{{Route('Create_products')}}">Aggiungi prodotto</a>
+          <a class="nav-link text-w ms-4 " href="{{Route('ViewsProducts')}}">Prodotti creati</a>
+          
+
         </div>
       </div>
     </div>
